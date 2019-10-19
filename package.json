@@ -1,17 +1,30 @@
 {
-    "private": true,
-    "engines": {
-        "yarn": ">=1.17.3"
-    },
-    "name": "frontend-monorepo",
-    "workspaces": [
-        "src/applications/*",
-        "src/components/*"
-    ],
-    "scripts": {
-        "start": "lerna run start"
-    },
-    "devDependencies": {
-        "lerna": "3.18.1"
-    }
+  "private": true,
+  "engines": {
+    "yarn": ">=1.19.0"
+  },
+  "name": "frontend-monorepo",
+  "workspaces": [
+    "src/**"
+  ],
+  "scripts": {
+    "start": "npx lerna run start --stream",
+    "doc": "npx start-storybook -p 6006",
+    "doc:build": "npx build-storybook"
+  },
+  "devDependencies": {
+    "lerna": "3.18.1"
+  },
+  "dependencies": {
+    "core-js": "3.3.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-intl": "3.3.2",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "5.1.2",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  }
 }
