@@ -1,0 +1,10 @@
+{
+    "name": "@applications/project",
+    "version": "0.0.1",
+    "dependencies": {
+        "@components/HelloWorld": "0.0.1"
+    },
+    "scripts": {
+        "start": "node ./index.js"
+    }
+}

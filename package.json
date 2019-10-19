@@ -1,0 +1,17 @@
+{
+    "private": true,
+    "engines": {
+        "yarn": ">=1.17.3"
+    },
+    "name": "frontend-monorepo",
+    "workspaces": [
+        "src/applications/*",
+        "src/components/*"
+    ],
+    "scripts": {
+        "start": "lerna run start"
+    },
+    "devDependencies": {
+        "lerna": "3.18.1"
+    }
+}
