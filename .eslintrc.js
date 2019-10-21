@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   root: true,
   plugins: ['jest', 'promise', 'react-hooks', 'import', 'react', 'prettier'],
@@ -52,7 +54,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       'eslint-import-resolver-lerna': {
-        packages: path.resolve(__dirname, 'src/**'),
+        packages: path.resolve(process.cwd(), 'src'),
       },
     },
   },

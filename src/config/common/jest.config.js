@@ -4,7 +4,7 @@ module.exports = {
   coverageDirectory: 'coverage',
   setupFiles: ['./jest.setup.js'],
 
-  roots: ['<rootDir>/src'],
+  roots: ['<rootDir>'],
 
   coveragePathIgnorePatterns: ['<rootDir>/node_modules', '<rootDir>/test'],
 

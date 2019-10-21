@@ -9,7 +9,7 @@ import useActions from 'app/hooks/useActions';
 import * as commentsActions from 'app/redux/comments/actions';
 import * as sessionActions from 'app/redux/session/actions';
 
-import Button from '@components/Button';
+import Button from '@root/components/Button';
 
 import './style.css';
 

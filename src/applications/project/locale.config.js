@@ -1,1 +1,1 @@
-module.exports = require('@config/main/locale.config.js');
+module.exports = require('@config/common/locale.config.js');

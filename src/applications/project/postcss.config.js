@@ -1,1 +1,1 @@
-module.exports = require('@config/main/postcss.config.js');
+module.exports = require('@config/webpack/postcss.config.js');

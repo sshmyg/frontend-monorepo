@@ -5,6 +5,6 @@ manageTranslations({
   translationsDirectory: 'src/locales/messages',
   languages: ['en'],
   jsonOptions: {
-    space: 2
-  }
+    space: 2,
+  },
 });
