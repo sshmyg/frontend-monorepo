@@ -1,6 +1,0 @@
-{
-  "name": "@config/webpack",
-  "version": "0.0.1",
-  "license": "MIT",
-  "description": "All necessary dependencies at root package.json"
-}

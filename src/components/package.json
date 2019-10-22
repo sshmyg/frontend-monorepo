@@ -1,12 +1,5 @@
 {
   "name": "@root/components",
   "version": "0.0.1",
-  "license": "UNLICENSED",
-  "scripts": {
-    "test": "npx jest --coverage",
-    "test:watch": "npx jest --watch --coverage"
-  },
-  "dependencies": {
-    "@config/common": "*"
-  }
+  "license": "UNLICENSED"
 }

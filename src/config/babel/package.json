@@ -1,6 +1,0 @@
-{
-  "name": "@config/babel",
-  "version": "0.0.1",
-  "license": "UNLICENSED",
-  "description": "All necessary dependencies at root package.json"
-}

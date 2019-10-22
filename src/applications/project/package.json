@@ -3,15 +3,11 @@
   "version": "0.0.1",
   "license": "MIT",
   "dependencies": {
-    "@config/common": "*",
-    "@config/babel": "*",
-    "@config/webpack": "*",
     "@root/components": "*"
   },
   "scripts": {
     "start": "npx webpack-dev-server --color",
     "build": "NODE_ENV=production npx webpack --progress --hide-modules",
-    "clear": "rm -rf dest node_modules",
-    "locale": "NODE_ENV=locales npx babel ./src >/dev/null && node ./locale.config.js"
+    "locale": "NODE_ENV=locales npx babel ./src >/dev/null --root-mode upward && node ../../../locale.config.js"
   }
 }
