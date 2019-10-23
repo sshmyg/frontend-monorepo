@@ -1,7 +1,7 @@
 {
   "name": "@root/project",
   "version": "0.0.1",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "@root/components": "*"
   },
