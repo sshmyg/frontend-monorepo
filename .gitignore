@@ -7,7 +7,10 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-**/node_modules/*
-**/dest/*
-**/coverage/*
+node_modules/*
+.sass-cache
+yarn-error.log
+dest
+build
+coverage
 yarn.lock

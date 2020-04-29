@@ -2,6 +2,8 @@ const path = require('path');
 
 module.exports = {
   root: true,
+  parser: 'babel-eslint',
+  // parser: '@typescript-eslint/parser',
   plugins: ['jest', 'promise', 'react-hooks', 'import', 'react', 'prettier'],
   extends: [
     'eslint:recommended',
@@ -17,6 +19,8 @@ module.exports = {
 
     'prettier',
     'prettier/react',
+
+    //'plugin:@typescript-eslint/recommended',
   ],
   env: {
     es6: true,
@@ -24,13 +28,8 @@ module.exports = {
     browser: true,
     jest: true,
   },
-  globals: {
-    window: true,
-    export: true,
-  },
-  parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 7,
+    ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
@@ -41,6 +40,7 @@ module.exports = {
     'no-param-reassign': ['error', { props: false }],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'no-mixed-operators': 'off',
+    'no-unused-vars': 'warn',
 
     'react/prop-types': 'off',
     'react/destructuring-assignment': 'off',
@@ -52,6 +52,9 @@ module.exports = {
     'prettier/prettier': 'error',
   },
   settings: {
+    react: {
+      version: 'detect',
+    },
     'import/resolver': {
       'eslint-import-resolver-lerna': {
         packages: path.resolve(process.cwd(), 'src'),

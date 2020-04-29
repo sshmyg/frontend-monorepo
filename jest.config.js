@@ -9,7 +9,7 @@ module.exports = {
   setupFilesAfterEnv: ['./jest.setup.js'],
   roots: ['<rootDir>/src'],
   moduleNameMapper: {
-    '@root/(.*)$': '<rootDir>/src/$1/src',
+    '@root/(.*)$': '<rootDir>/src/$1',
   },
 
   notify: true,
