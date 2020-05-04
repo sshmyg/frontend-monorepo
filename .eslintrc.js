@@ -55,10 +55,5 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    'import/resolver': {
-      'eslint-import-resolver-lerna': {
-        packages: path.resolve(process.cwd(), 'src'),
-      },
-    },
   },
 };

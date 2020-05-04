@@ -1,0 +1,42 @@
+:root {
+  --body-bg-color: rgb(68, 118, 131);
+  --body-text-color: yellow;
+  --link-text-color: rgb(0, 183, 255);
+}
+
+:global {
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  body {
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--body-text-color);
+    margin: 0;
+  }
+
+  a {
+    color: var(--link-text-color);
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.main {
+  flex-grow: 1;
+  background-color: var(--body-bg-color);
+}

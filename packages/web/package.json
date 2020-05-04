@@ -11,6 +11,8 @@
     "start:prod": "yarn prod && npx http-server ./build -a localhost --cors -p 3000 --silent -o",
     "dev": "NODE_ENV=development yarn webpack --progress --hide-modules",
     "prod": "NODE_ENV=production npx webpack --progress --hide-modules",
-    "locale": "NODE_ENV=production npx babel ./src >/dev/null && node ../../locale.config.js && rm -rf build/messages src/locales/whitelists"
+    "locale": "NODE_ENV=production npx babel ./src >/dev/null && node ../../locale.config.js && rm -rf build/messages src/locales/whitelists",
+    "test": "npx jest --coverage",
+    "test:watch": "npx jest --watch --coverage"
   }
 }

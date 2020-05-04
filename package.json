@@ -2,7 +2,7 @@
   "private": true,
   "author": "Serhey Shmyg",
   "name": "frontend-monorepo",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "homepage": "https://github.com/sshmyg",
   "engines": {
     "yarn": ">=1.19.0",
@@ -12,12 +12,12 @@
     "packages/*"
   ],
   "scripts": {
-    "init": "npx lerna exec yarn",
+    "i": "npx lerna bootstrap",
     "start": "npx lerna run start --stream",
     "prod": "npx lerna run build --stream",
     "locale": "npx lerna run locale --stream",
     "start:web": "npx lerna run start --stream --scope @root/web",
-    "test": "npx jest --coverage",
+    "test": "npx lerna run test --stream",
     "test:watch": "npx jest --watch --coverage",
     "story": "npx start-storybook -p 6006",
     "story:build": "npx build-storybook"

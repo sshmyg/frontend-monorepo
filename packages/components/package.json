@@ -1,5 +1,9 @@
 {
   "name": "@root/components",
   "version": "0.0.1",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "test": "npx jest --coverage",
+    "test:watch": "npx jest --watch --coverage"
+  }
 }
