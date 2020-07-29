@@ -1,9 +1,6 @@
-const path = require('path');
-
 module.exports = {
   root: true,
   parser: 'babel-eslint',
-  // parser: '@typescript-eslint/parser',
   plugins: ['jest', 'promise', 'react-hooks', 'import', 'react', 'prettier'],
   extends: [
     'eslint:recommended',
@@ -19,8 +16,6 @@ module.exports = {
 
     'prettier',
     'prettier/react',
-
-    //'plugin:@typescript-eslint/recommended',
   ],
   env: {
     es6: true,
@@ -48,6 +43,21 @@ module.exports = {
 
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+
+    'import/order': [
+      'warn',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+        ],
+        'newlines-between': 'always-and-inside-groups',
+      },
+    ],
 
     'prettier/prettier': 'error',
   },

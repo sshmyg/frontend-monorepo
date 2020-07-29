@@ -4,7 +4,7 @@ module.exports = {
     'import/resolver': {
       'babel-module': {
         alias: {
-          app: './src',
+          '@': './src',
         },
         extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       },

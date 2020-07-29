@@ -2,13 +2,14 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 
-import { useActions, useSelector } from 'app/hooks';
-
-import * as sessionActions from 'app/redux/session/actions';
-import * as commentsActions from 'app/redux/comments/actions';
-
-import { Block, Section } from 'app/components';
 import { Button } from '@root/components';
+
+import { useActions, useSelector } from '@/hooks';
+
+import * as sessionActions from '@/redux/session/actions';
+import * as commentsActions from '@/redux/comments/actions';
+
+import { Block, Section } from '@/components';
 
 import messages from './Home.messages';
 
