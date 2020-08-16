@@ -242,13 +242,17 @@ module.exports = {
       }),
 
     !isDev &&
-      new CopyPlugin([
-        {
-          from: 'public/**/*',
-          ignore: ['index.html'],
-          flatten: true,
-        },
-      ]),
+      new CopyPlugin({
+        patterns: [
+          {
+            from: 'public/**/*',
+            flatten: true,
+            globOptions: {
+              ignore: ['index.html'],
+            },
+          },
+        ],
+      }),
 
     isDev && new webpack.HotModuleReplacementPlugin(),
 
